@@ -3,8 +3,7 @@ $(function () {
                $(".cityname").html(city);
                $(".weather tbody").empty();
                $.get("https://free-api.heweather.com/v5/weather",{city:city,key:"f83f293eedd8440aad69e3e0346ae412"},function (r) {
-                   var arr=["今天","明天","后天"]
-                   console.log(r)
+                   var arr=["今天","明天","后天"];
                    $.each(r.HeWeather5[0].daily_forecast,function (index,value) {
                        $("<tr>").html(function () {
                            return "<td>"+arr[index]+"</td><td>"+value.date+"</td><td>"+value.cond.txt_d+"</td><td>"+value.tmp.min+"℃~"+value.tmp.max+"℃"+"</td><td>"+value.wind.dir+"/"+value.wind.sc+"</td>"
@@ -25,7 +24,6 @@ $(function () {
             $(".area").slideToggle();//内容的显示与隐藏
         }).one("click",function () { //触发一次  点完就会注销
             $.getJSON("css/citys.json",function (r) { //getJSON不能远程获取  下载到本地citys.json
-//                console.log(r)
                 var province={}; //所有省作为一个对象
                 $.each(r,function (index,value) {
                     if(!province[value.provinceZh]){  //如果没有被遍历到

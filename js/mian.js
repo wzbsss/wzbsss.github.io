@@ -57,11 +57,6 @@
             var width=newtimes/alltime;
             inner.style.width=width*100+"%";
 		}
-		// progress.onclick=function(e){
-		// 	let x=e.offsetX;
-		// 	let bili=x/800;
-		// 	video.currentTime=alltime*bili;
-		// }
 		progress.onmousedown=function(e){
             var ox=e.offsetX; //鼠标按下某位置到(直接或最早事件源)progress开始位置的距离
             var bili=ox/l; //鼠标按下某位置到progress开始位置的距离  与  progress总长的一个比例

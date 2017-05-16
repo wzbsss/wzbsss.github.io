@@ -378,8 +378,7 @@
 			next++;
 			if(next>tu.length-1){
 				next=0;
-				}
-				console.log(12)
+			}
 			tu[next].style.left=imgW+"px";
 			animate(tu[now],{left:-imgW},donghuaTime);
 			
