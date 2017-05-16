@@ -112,64 +112,127 @@
         	position: absolute;
     	}
 		.zuopinzhan{
-			width:1000px;
-			height: 800px;
+			width:1400px;
+			height: 100%;
 			background-color:rgba(255,255,255,.6); 
 			margin: 0 auto; 
 			transform:rotateY(180deg);
 		}
+		.border_animation{
+	border: 1px solid #eee;
+	width: 306px;
+	height: 379px;
+	float: left;
+	margin-right: 7px;
+	position: relative;
+	z-index: 10;
+}
+.border_animation .border_top{
+	position: absolute;
+	height: 1px;
+	width: 0;
+	font-size: 0;
+	background: #666666;
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease-out;
+}
+.border_animation:hover .border_top{
+	width: 300px;
+}
+.border_animation .border_right{
+	position: absolute;
+	height: 0px;
+	width: 1px;
+	font-size: 0;
+	background: #666666;
+	bottom: 0;
+	right: 0;
+	transition: all 0.5s ease-out;
+}
+.border_animation:hover .border_right{
+	height: 380px;
+}
+.border_animation .border_bottom{
+	position: absolute;
+	height: 1px;
+	width: 0px;
+	font-size: 0;
+	background: #666666;
+	right: 0;
+	bottom: 0;
+	transition: all 0.5s ease-out;
+}
+.border_animation:hover .border_bottom{
+	width: 300px;
+}
+.border_animation .border_left{
+	position: absolute;
+	height: 0px;
+	width: 1px;
+	font-size: 0;
+	background: #666666;
+	left: 0;
+	top: 0;
+	transition: all 0.5s ease-out;
+}
+.border_animation:hover .border_left{
+	height: 380px;
+}
 		.youxiqu,.wangyequ{
 			float: left;
-			width: 500px;
-			height: 500px;
+			width: 680px;
+			height: 800px;
 			padding: 20px;
 			box-sizing:border-box;
+			margin-left: 20px;
 		}
 		.youxiqu h2,.wangyequ h2{
-			font-size: 25px;
+			font-size: 40px;
 			color: #f93;
 			text-align: center;
-			height: 30px;
-			line-height: 30px;
-			margin-bottom: 10px;
-			margin-top: 10px;
+			height: 50px;
+			line-height: 50px;
+			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 		.wangye{
-			height: 30px;
+			height: 40px;
 			margin: 10px auto;
 		}
 		.wangye a{
 			display: block;
-			width: 460px;
-			height: 30px;
-			font-size: 18px;		
+			width: 560px;
+			height: 40px;
+			font-size: 28px;		
 			color: #555;
 			text-align: left;
-			text-indent: 2em;
+			text-indent: 1em;
 		}
 		.gongju{
-			margin-top: 30px;
+			margin-top: 60px;
 			display: flex;
-			width: 460px;
-			height: 100px;
+			width: 560px;
+			height: 300px;
 			justify-content:space-around; 
 		}
 		.gongju div{
-			width: 80px;
+			width: 120px;
 			height: 100px;
 		}
 		.gongju div a,.gongju div a img{
-			width: 80px;
-			height: 60px;
+			width: 120px;
+			height: 100px;
 			display: block;
 
 		}
 		.gongju div p{
-			height: 40px;
-			line-height: 40px;
+			height: 60px;
+			line-height: 60px;
 			text-align: center;
 			color: #333;
 			cursor: pointer;
+			font-size: 25px;
 		}
 		.wangye a span{
 			float: left;
@@ -187,10 +250,9 @@
 			float: left;
 		}
 		.daziyouxi{
-			width: 200px;
-			height: 280px;
+			width: 300px;
+			height: 380px;
 			float: left;
-			margin-left: 20px;
 			-webkit-transition: all 0.3s ease;
     		transition: all 0.3s ease;
 		}
@@ -199,9 +261,9 @@
     		transform: translate3d(0, -2px, 0);
 		}
 		.daziyouxi h3{
-			height: 30px;
-			font-size: 20px;
-			line-height: 30px;
+			height: 35px;
+			font-size: 30px;
+			line-height: 35px;
 			color: #333;
 			cursor: pointer;
 		}
@@ -211,31 +273,33 @@
 		}
 		.dazi,.dazi img{
 			display: block;
-			width: 200px;
-			height: 150px;
+			width: 300px;
+			height: 200px;
 		}
 		.daziyouxi p{
-			margin-top: 10px;
-			font-size: 16px;
+			margin-top: 20px;
+			font-size: 25px;
 			color: #333;
-			line-height: 20px;
+			line-height: 25px;
 		}
 		.tianqi{
-			width:1000px;
-			height: auto;
+			width:1400px;
+			height: 800px;
 			background-color:#ecdad2; 
 			display: none;
 			z-index: 998; 
 			position: absolute;
+			overflow: auto;
+			padding-bottom: 50px;
 		}
 		.tianqi>span{
-			font-size: 18px;
+			font-size: 25px;
 			color: rgba(10,10,255,.9);
 			border: 1px solid rgba(10,10,255,.3);
-			padding: 3px 5px;
+			padding: 5px 8px;
 			position: absolute;
-			right: 50px;
-			top: 50px;
+			right: 100px;
+			top: 80px;
 			cursor: pointer;
 		}
 		.tianqi>span:hover{
@@ -661,24 +725,24 @@
 		/*天气*/
 		
         .weather{
-            width: 900px;
+            width: 1200px;
             height: 200px;
             border: 1px  solid#000;
             margin: 0 auto;
             /*合并表格边框*/
             border-collapse: collapse;
-            font-size: 20px;
+            font-size: 30px;
             text-align: center;
             line-height: 40px;
             overflow: auto;
         }
         .weather table thead{
             width: 900px;
-            height: 50px;
+            height: 80px;
         }
         .weather td,.weather th {
             width: 190px;
-            height: 50px;
+            height: 80px;
             border: 1px solid #000;
         }
         .weather th,.life th{
@@ -687,18 +751,33 @@
         }
         .weather tr,.life tr{
             width: 900px;
-            height: 50px;
+            height: 80px;
         }
         .change{
-            width: 900px;
+            width: 1000px;
             margin: 0 auto;
         }
         .area{
+        	width: 800px;
+
             display: none;
+        }
+        .area select{
+        	width: 300px;
+        	height: 50px;
+        }
+        input[type=button]{
+        	width: 150px;
+        	height: 50px;
+        	border: none;
+        	font-size: 30px;
         }
         label{
             display: block;
             float: left;
+            width: 200px;
+            height: 80px;
+            font-weight: 700;
         }
         .tianqi h1{
             margin: 0 auto;
@@ -706,8 +785,8 @@
             text-align: center;
         }
         .life{
-            width: 900px;
-            height: 450px;
+            width: 1200px;
+            height: 800px;
             border: 1px  solid#000;
             margin: 0 auto;
             /*合并表格边框*/
@@ -717,12 +796,13 @@
             /*line-height: 40px;*/
         }
         .life td,.life th{
-            width: 200px;
-            height: 50px;
+            width: 499px;
+            height: 80px;
             border: 1px solid #000;
+            font-size: 25px;
         }
         .life td:nth-child(3){
-            width: 500px;
+            width: 799px;
         }
 
 

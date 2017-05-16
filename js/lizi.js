@@ -40,7 +40,7 @@
 
             let arr=[];
             let t=setInterval(function () {
-                cobj.clearRect(0,0,1000,1000);
+                cobj.clearRect(0,0,1400,800);
                 let liziobj=new lizi(canvas,cobj);
                 arr.push(liziobj);
                 for(let i=0;i<arr.length;i++){
