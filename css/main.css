@@ -388,12 +388,19 @@
 			font-family: 华文彩云;
 			font-weight: 700;
 			cursor: pointer;
+			transition:all 0.5s;
 		}
 		.left{
-			left: 0;
+			left: -330px;
 		}
 		.right{
+			right: -330px;
+		}
+		.zhanshi:hover .right{
 			right: 0;
+		}
+		.zhanshi:hover .left{
+			left: 0;
 		}
 		.gerenzhao{
 			float: left;
