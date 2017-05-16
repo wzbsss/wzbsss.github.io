@@ -424,7 +424,6 @@
 			// clearInterval(t);
 		}
 		rightbtn.onclick=function(){
-			console.log(1)
 			if(flag){
 			move("r");	
 			}

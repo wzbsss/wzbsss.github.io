@@ -57,10 +57,11 @@
             var width=newtimes/alltime;
             inner.style.width=width*100+"%";
 		}
+		console.log()
 		progress.onmousedown=function(e){
             var ox=e.offsetX; //鼠标按下某位置到(直接或最早事件源)progress开始位置的距离
             var bili=ox/l; //鼠标按下某位置到progress开始位置的距离  与  progress总长的一个比例
-            var pos=alltime*bili //当前播放时间的位置 (duration返回当前音频/视频的长度（以秒计）)
+            var pos=alltime*bili; //当前播放时间的位置 (duration返回当前音频/视频的长度（以秒计）)
             video.currentTime=pos;  //currentTime设置或返回音频/视频中的当前播放位置（以秒计）
             document.onmousemove=function (e) {
 //                var ox=e.offsetX;  //onmousemove用e.offsetX;存在Bug
@@ -106,8 +107,8 @@
 				l=progress.offsetWidth;
 			}else{
 				flag=true;
-			section.style.width="500px";
-			section.style.height="440px";
+			section.style.width="700px";
+			section.style.height="600px";
 			quanp.value=quanp.getAttribute("value4");
 			if(document.exitFullscreen){
 				document.exitFullscreen();
