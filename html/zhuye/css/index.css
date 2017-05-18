@@ -35,6 +35,7 @@ header{
     z-index: 99999;
     position: relative;
 }
+
 .neikuan{
 	width:1268px;
 	margin:0 auto;
@@ -66,8 +67,13 @@ header{
     padding: 5px 35px;
     z-index: 99999;
 }
-.nav ul li:hover{
+.nav ul li a{
+	color: #666;
+}
+.nav ul li:hover a{
 	color: white;
+}
+.nav ul li:hover{	
     background-color: #cc9900;
 }
 .col-sm-none{
@@ -102,7 +108,7 @@ header{
 }
 .nr{
 	height: 150px;
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 	line-height: 36px;
 	opacity: 0;
@@ -119,11 +125,56 @@ header{
 	right: 0;
 	top: 300px;
 }
+
+/*我的介绍*/
+.gerenzhao{
+	width: 50%;
+	float: left;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.gerenzhao .iconfont:first-child{
+	font-size: 60px;
+}
+.grz{
+	width: 317.5px;
+	height: 80px;
+	text-align: center;
+	font-size: 40px;
+	line-height: 80px;
+	color: #cc9900;
+	margin: 0 auto;
+	margin-bottom: 20px;	
+}
+.grz_tu{
+	width: 600.5px;
+	height: 400px;
+	background-image: url(../img/wo.jpg);
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.grjl{
+	height:45px;
+	font-size: 20px;
+	color: #333; 
+	margin-left: 80px;
+	line-height: 38px;
+	text-align: left;
+	text-indent: 8em;
+}
+
+
+
+
+
 .xc_box{
 	width: 100%;
 	margin: 0 auto;
-
 }
+
+
+
 
 .xiangce{
 	margin-bottom: 10px;
@@ -185,52 +236,13 @@ header{
 	padding-top: 30px;
 
 }
-.gerenzhao{
-	width: 25%;
-	float: left;
-	margin: 0 auto;
-	margin-bottom: 40px;
-}
-.gerenzhao .iconfont:first-child{
-	font-size: 40px;
-}
-.grz{
-	width: 317.5px;
-	height: 50px;
-	text-align: center;
-	font-size: 18px;
-	color: #cc9900;
-	margin: 0 auto;
-	
-}
-.grz_tu{
-	width: 317.5px;
-	height: 310px;
-	background-image: url(../img/wo.jpg);
-	background-position: center;
-	background-size: cover;
-	margin: 0 auto;
-}
-.grjl{
-	height:45px;
-	font-size: 15px;
-	color: #fff; 
-	margin-left: 80px;
-	line-height: 38px;
-}
+
 .jn{
 	margin-left: 30px;
 	margin-bottom: 15px;
 	display: block;
 
 }
-/*.zn_tu{
-	width: 80px;
-	height: 80px;
-	float: left;
-	margin-left: 12px;
-	overflow: hidden;
-}*/
 .ps{
 	width: 60px;
 	height: 60px;

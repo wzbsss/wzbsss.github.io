@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            list-style: none;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 50px;
+        }
+        body{
+            background-color: #e1dad2;
+        }
+        h1,h1 span{
+            font-size: 50px;
+            font-weight: 900;
+            color: #485529;
+            font-family: 华文彩云;
+        }
+        canvas{
+            display: block;
+            float: left;
+            z-index: 4;
+            position: relative;
+        }
+        .tu{
+            background-image: url(f.gif);
+            width:245px; height:245px;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            left: 127px;
+            top: 127px;
+            margin: auto;
+            border-radius: 50%;
+        }
+        h1{
+            margin-bottom: 50px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        .sence{
+            width: 1200px;
+            height: auto;
+            margin: 100px auto;
+            position: relative;
+        }
+        .left{
+            width:100px;
+            height:100px;
+            position: absolute;
+            left: 110px;
+            top:-100px;
+            background-image: url("img/1.png");
+            z-index: -999;
+        }
+        .right{
+            width:555px;
+            height:333px;
+            background-image: url("img/2.png");
+            position: absolute;
+            right:0;
+            top:-100px;
+            z-index: -999;
+        }
+        input{
+            width:200px;
+            height: 50px;
+            background-color: #f93;
+            color: #333;
+            outline: none;
+            display: block;
+            float: right;
+            margin-right: 100px;
+
+        }
+        .change{
+            width: 1200px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        table{
+            width: 1000px;
+            height: 200px;
+            border: 1px  solid rgba(255,255,255,0);
+            margin: 0 auto;
+            /*合并表格边框*/
+            border-collapse: collapse;
+            background: #e1dad2;
+        }
+        thead{
+            width: 1000px;
+            height: 50px;
+            background-color: rgba(10,10,255,.3);
+            font-size: 25px;
+            border: 0;
+
+        }
+        thead tr{
+            display: block;
+            margin: 10px auto;
+        }
+        thead tr th{
+            width: 400px;
+            height: 150px;
+        }
+        tbody tr{
+            display: block;
+            margin: 10px auto;
+            background-color: #e9e8e6;
+            border-radius: 20px;
+        }
+        tbody td{
+            width: 400px;
+            height: 150px;
+        }
+        label{
+            float: right;
+        }
+        .life{
+            width: 1000px;
+            height: 450px;
+            margin: 0 auto;
+            /*合并表格边框*/
+            border-collapse: collapse;
+            font-size: 20px;
+            text-align: center;
+            /*line-height: 40px;*/
+        }
+        .life td,.life th{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+        }
+        .life td:nth-child(3){
+            width: 600px;
+        }
+        .zhishu{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sence">
+    <div class="zs">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <canvas width="500px" height="500px"></canvas>
+    <div class="tu"></div>
+<h1><span class="cityname"></span>市天气预报</h1>
+<div class="change">
+    <label>
+        <input type="button" value="切换城市" class="toggle">
+    </label>
+    <label class="area">省：
+        <select class="province">
+            <option>请选择省份</option>
+        </select>
+        <select class="city">
+            <option>请选择市</option>
+        </select>
+    </label>
+</div>
+
+<table class="weather">
+    <thead>
+    <tr>
+        <th>时 间</th>
+        <th>日 期</th>
+        <th>天 气</th>
+        <th>温 度</th>
+        <th>风 力</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+<h1 class="zhishu"><span class="cityname"></span>市生活指数</h1>
+<table class="life">
+    <thead>
+    <tr>
+        <th>指&nbsp;数</th>
+        <th>适宜程度</th>
+        <th>建&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;议</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr id="air">
+        <td>空气指数</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="comf">
+        <td>舒适度</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="cw">
+        <td>洗车指南</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="drsg">
+        <td>穿衣指数</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="flu">
+        <td>流感指数</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="sport">
+        <td>运动指数</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="trav">
+        <td>旅游指数</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr id="uv">
+        <td>紫外线</td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<script src="jQuery.js"></script>
+<script>
+// 和风天气获取
+// https://free-api.heweather.com/v5/
+//https://free-api.heweather.com/v5/weather?city=yourcity&key=yourkey
+//个人认证key: f83f293eedd8440aad69e3e0346ae412
+
+// 新浪网获取城市信息
+// http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js
+
+//$.get  $.getScript  $.getJSON  都可用$.ajax() 注意type
+    $(function () {
+//        $.ajax({
+//            url:"http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",
+//            dataType:"script",
+//            success : function  (r) {
+//                console.log(remote_ip_info)
+//            }
+//        })
+
+
+           function update(city) {
+               $(".cityname").html(city);
+               $(".weather tbody").empty();
+               $.get("https://free-api.heweather.com/v5/weather",{city:city,key:"f83f293eedd8440aad69e3e0346ae412"},function (r) {
+                   var arr=["今天","明天","后天"]
+                   console.log(r)
+                   $.each(r.HeWeather5[0].daily_forecast,function (index,value) {
+                       $("<tr>").html(function () {
+                           return "<td>"+arr[index]+"</td><td>"+value.date+"</td><td>"+value.cond.txt_d+"</td><td>"+value.tmp.min+"℃~"+value.tmp.max+"℃"+"</td><td>"+value.wind.dir+"/"+value.wind.sc+"</td>"
+                       }).appendTo(".weather tbody");
+                   })
+                   $.each(r.HeWeather5[0].suggestion,function (i,v) {
+                       $("#"+i).find("td").eq(1).text(v.brf).end().eq(2).text(v.txt)
+                   })
+               })
+           }
+        //获取城市信息
+        $.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function () {
+            var city=remote_ip_info.city;
+            update(city);
+        })
+        //点击带来城市信息
+        $(".toggle").click(function () {
+            $(".area").slideToggle();//内容的显示与隐藏
+        }).one("click",function () { //触发一次  点完就会注销
+            $.getJSON("citys.json",function (r) { //getJSON不能远程获取  下载到本地citys.json
+//                console.log(r)
+                var province={}; //所有省作为一个对象
+                $.each(r,function (index,value) {
+                    if(!province[value.provinceZh]){  //如果没有被遍历到
+                        province[value.provinceZh]=[];
+                    }
+                    province[value.provinceZh].push(value.cityZh); //利用province的value
+                })
+                //联动
+                $.each(province,function (i,v) {
+                    $("<option>").text(i).val(i).appendTo(".province");  //text用于设置元素内容的文本   val()获得匹配元素的当前值。
+                })
+
+                $(".province").change(function () {
+                    var val=$(this).val();//省的名字
+                    $(".city").html("<option value=''>请选择市</option>>")
+                    var citys=province[val];
+                    $.each(citys,function (i,v) {
+                        $("<option>").text(v).val(v).appendTo(".city"); //再次选择省份 市..
+                    })
+                })
+                $(".city").change(function () {
+                    if($(this).val()!=""){
+                        update($(this).val())
+                    }
+                })
+            })
+        })
+
+    })
+
+
+
+</script>
+<script type="text/javascript">
+
+    var canvas=document.querySelector("canvas");
+    var cobj=canvas.getContext("2d");
+    
+    cobj.translate(250,250);
+    function plate () {
+        cobj.lineWidth=6;
+        cobj.strokeStyle="#fea"
+        cobj.beginPath();
+        cobj.arc(0,0,120,0,Math.PI*2)
+        cobj.stroke();
+        
+        cobj.save();
+    for(var i=0;i<60;i++){
+        var s=110;
+        cobj.lineWidth=2;
+        cobj.strokeStyle="#fea"
+        if(i%5==0){
+            s=104;
+            cobj.lineWidth=4;
+            cobj.strokeStyle="#123"
+        }
+        
+        cobj.beginPath();
+        cobj.moveTo(s,0);
+        cobj.lineTo(116,0);
+        cobj.stroke();
+        cobj.rotate(6*Math.PI/180);
+        }
+        cobj.stroke();
+    }
+    function pointer(ha,ma,sa){
+        cobj.save();
+        cobj.lineWidth="6";
+        cobj.strokeStyle="#112"
+        cobj.rotate(ha);
+        cobj.beginPath();
+        cobj.moveTo(0,0);
+        cobj.lineTo(0,-50);
+        cobj.stroke();
+        cobj.restore();
+
+        cobj.save();
+        cobj.lineWidth="4";
+
+        cobj.rotate(ma);
+        cobj.beginPath();
+        cobj.moveTo(0,0);
+        cobj.lineTo(0,-70);
+        cobj.stroke();
+        cobj.restore();
+
+        cobj.save();
+        cobj.lineWidth="2";
+        cobj.strokeStyle="red"
+        cobj.rotate(sa);
+        cobj.beginPath();
+        cobj.moveTo(0,20);
+        cobj.lineTo(0,-100);
+        cobj.stroke();
+        cobj.restore();
+
+        cobj.save();
+        cobj.beginPath();
+        cobj.fillStyle="#f93";
+        cobj.arc(0,0,6,0,Math.PI*2);
+        cobj.fill();
+        cobj.restore();
+    }
+
+    function time(){
+        
+        cobj.clearRect(-250,-250,500,500);
+        plate ();
+        var date= new Date();
+        var hour=date.getHours();
+        var min=date.getMinutes();
+        var sec=date.getSeconds();
+        pointer(hour/12*Math.PI*2+min/60*Math.PI/6,min/60*Math.PI*2,sec/60*Math.PI*2);
+        setTimeout(time,1000);
+    }
+    time();
+</script>
+</body>
+</html>
