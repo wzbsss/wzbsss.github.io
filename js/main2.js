@@ -44,7 +44,8 @@ jQuery(document).ready(function() {
         pagerCustom: '#bx-pager',
         controls: false
     });
-
+    
+            
     /* ---------------------------------------------- /*
      * CLIENT SLIDE 
     /* ---------------------------------------------- */    
@@ -55,7 +56,7 @@ jQuery(document).ready(function() {
             scroll: 1,
             items: {
                 width: 116,
-                //  height: '30%',  //  optionally resize item-height
+                 // height: '30%',  //  optionally resize item-height
                 visible: {
                     min: 1,
                     max: 4

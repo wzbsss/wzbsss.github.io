@@ -478,7 +478,7 @@
                 this._move();
                 this._keydown();
                 this.bestscore=localStorage.score?localStorage.score:0;
-                this.bestfenshu = localStorage.bestfenshu ? JSON.parse(localStorage.bestfenshu) : [];
+                this.bestscor=localStorage.bestscor?JSON.parse(localStorage.bestscor):[];
                 this.phb_flag = true;
                 this.phb();
             }
@@ -539,15 +539,13 @@
             }
 
             // 最高分排行榜
-            phb() {
-            if (!phb_flag) {
-                var data = localStorage.bestfenshu ? JSON.parse(localStorage.bestfenshu) : [];
-                data.forEach(function (v, i) {
-                    var tr = document.createElement("tr");
-                    tr.innerHTML = `<td>${i + 1}</td><td>${data[i].player}</td><td>${data[i].score}</td>`;
-                    tbody.appendChild(tr);
-                })
-            }
+           phb(){
+            var bestscor=localStorage.bestscor?JSON.parse(localStorage.bestscor):[];
+            bestscor.forEach(function (v,i) {
+                var tr=document.createElement("tr");
+                tr.innerHTML=`<td>${i+1}</td><td>${bestscor[i].player}</td><td>${bestscor[i].scor}</td>`;
+                tbody.appendChild(tr);
+            })
         }
 
             // 键盘按下字母会消失
@@ -592,22 +590,22 @@
                         localStorage.score=this.scor;
                         this.bestscore=this.scor;
                     }
-        if (this.bestfenshu.length < 3 || this.bestfenshu.length >3 && this.scor > this.bestfenshu[2].scor) {
-                player = prompt("请输入名字");
-                this.bestfenshu.push({player, score: this.scor});
-                this.bestfenshu.sort(function (a, b) {
-                    if (a.scor > b.scor) {
+                    
+       if(this.bestscor.length<3||(this.bestscor.length>=3&&this.scor>this.bestscor[2].scor)){
+
+                var player=prompt("请输入姓名");
+                this.bestscor.push({player,scor:this.scor});
+                this.bestscor.sort(function (a,b) {//排序
+                    if(a.scor>b.scor){
                         return -1;
-                    } else {
+                    }else{
                         return 1;
                     }
-                })
-            if (this.bestfenshu.length > 3) {
-                    this.bestfenshu.pop();
+                });
+                if(this.bestscor.length>3){
+                    this.bestscor.pop();
                 }
-                localStorage.bestfenshu = JSON.stringify(this.bestfenshu);
-                
-                this.best.innerHTML = this.bestfenshu[0].scor;
+                localStorage.bestscor=JSON.stringify(this.bestscor);
             }
                 this.obj={};
                 this.speed=5;
@@ -615,6 +613,7 @@
                 this.num = 3;
                 this.scorele.innerHTML=0;
                 this.stateele.innerHTML=1;
+                this.bestscore=0;
                 this.life=5;
                 this.lifeele.style.backgroundSize=this.life*20+"%"+" 100%";
                 this.main.innerHTML=null;
@@ -720,7 +719,7 @@
         // 游戏结束后重新再来
         restart.onclick=function(){
             if(flag){
-            game._gameover();
+            // game._gameover();
             mask.style.display="none";
             game.start();
             }else{
@@ -759,7 +758,7 @@
                 stoprestart.onclick=function(){
 
                     mask2.style.display="none";
-                    game._gameover();
+                    // game._gameover();
                     mask.style.display="none"
                     game.start();
                 }
