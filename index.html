@@ -1,568 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	
-    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name=“full-screen” content=“yes”>
+    <meta name=“x5-fullscreen” content=“true”>
+    <meta name=“browsermode” content=“application”>
+        <title>3d视频播放</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_hr0ryo61zdtxzuxr.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/rem.css">
+    <style type="text/css">
+        .xuan {
+            width: 4rem;
+            height: 4rem;
+            display: block;
+            background-image: url(img/6516.png);
+            background-size: cover;
+            background-position: center;
+            z-index: 999998;
+            position: fixed;
+            top: 0;
+            left: 0;
 
-    <title>温馨一刻</title>
-	
-    <!--Library Styles-->    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/lib/font-awesome.css" rel="stylesheet">
-    <link href="css/lib/nivo-lightbox.css" rel="stylesheet">
-    <link href="css/lib/nivo-themes/default/default.css" rel="stylesheet">
-	
-    <!--Template Styles-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/scheme/purple.css" rel="stylesheet">
+        }
+
+        .xua1 {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .close {
+            width: 0.4rem;
+            height: 0.4rem;
+            background: orange;
+            border-radius: 1rem;
+            position: absolute;
+            right: 0.2rem;
+            top: 0.2rem;
+            font-size: 0.4rem;
+            line-height: 0.4rem;
+            cursor: pointer;
+            color: #fff;
+            text-align: center;
+            z-index: 999998;
+        }
+
+        .zuopinzhan {
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
 </head>
+<body>
+<div class="scene">
+    <ul class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+               <!-- 我的作品开始 -->
+        <div class="works_show">
+            <div class="neikuan ">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="works_title works_title_a">作 品 展 示</div>
+                <div class="works_title works_title1">Our Works</div>
+            </div>
+            <div class="works_pic col-lg-4 col-md-6 col-sm-12">
+                <a href="###">
+                    <div class="border_animation">
+                               <div class="border border_top"></div>
+                               <div class="border border_right"></div>
+                               <div class="border border_bottom"></div>
+                               <div class="border border_left"></div>
+                        <h3>网 站 类</h3>
+                        <div class="picture">
+                            <div class="mask mask1">
+                                <a href="html/jingdong/index.html" target="_blank"><p style="text-indent: 2em;"> <img src="img/jingdong.ico" alt="">  京 东 官 网</p></a>
+                                <a href="html/tianmao/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/tianmao.ico" alt="">  天 猫 官 网</p></a>
+                                <a href="html/xiaomi/index.html" target="_blank"><p style="text-indent: 2em;"> <img src="img/xiaomi.ico" alt=""> 小 米 官 网</p></a>
+                                <a href="html/yindong/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/yidong.ico" alt=""> 中 国 移 动</p></a>
+                                <a href="html/yintai/yintai.html" target="_blank"><p style="text-indent: 2em;"><img src="img/yintai.png" alt=""> 银 泰 官 网</p></a>
+                                <a href="html/shafa/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/shafa.ico" alt="">  沙 发 网</p></a>
+                                <a href="html/apple/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/apple.png" alt=""> 苹 果 网</p></a>
+                            </div>
+                            <img src="img/01.jpg" alt="" class="tu1">
+                        </div>
+                    </div>  
+                </a>
+            </div>
+            <div class="works_pic col-lg-4 col-md-6 col-sm-12">
+                <a href="###">
+                    <div class="border_animation">
+                           <div class="border border_top"></div>
+                           <div class="border border_right"></div>
+                           <div class="border border_bottom"></div>
+                           <div class="border border_left"></div>
+                        <h3>游 戏 类</h3>
+                        <div class="picture">
+                            <div class="mask mask2">
+                                <a href="html/youxi-dazi/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/logodz.png" alt=""> 打 字 游 戏</p></a>
+                                <a href="html/youxi-saolei/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/1.jpg" alt=""> 扫 雷</p></a>
+                                <a href="html/snake/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/logotc.png" alt=""> 贪 吃 蛇</p></a>
+                                <a href="html/youxi-wzq/index.html" target="_blank"><p style="text-indent: 2em;"><img src="img/rjwzq.png" alt="">人机大战五子棋</p></a>
+                                <a href="html/youxi-wzq/index2.html" target="_blank"><p style="text-indent: 2em;"><img src="img/rjwzq.png" alt=""> 玩家对战五子棋</p></a>
+                            </div>
+                            <img src="img/03.jpg" alt="" class="tu2">
+                           </div>
+                    </div>  
+                </a>
+            </div>
+            <div class="works_pic col-lg-4 col-md-6 col-sm-12">
+                <a href="###">
+                    <div class="border_animation">
+                            <div class="border border_top"></div>
+                            <div class="border border_right"></div>
+                            <div class="border border_bottom"></div>
+                            <div class="border border_left"></div>
+                        <h3>特 效 类</h3>
+                        <div class="picture">
+                            <div class="mask mask3">
+                                <a href="html/huaban.html" target="_blank"><p style="text-indent: 2em;"><img src="img/huaban.png" alt=""> 绘 图 板</p></a>
+                                <a href=""></a>
+                                <a href="html/lizi.html" target="_blank"><p style="text-indent: 2em;"><img src="img/200.png" alt=""> 粒 子 动 画</p></a>
+                                <a href="html/tianqi/tianqi.html" target="_blank"><p style="text-indent: 2em;"><img src="img/timg (1).gif" alt=""> 天 气 预 报</p></a>
+                            </div>
+                            <img src="img/02.jpg" alt="" class="tu3">
+                        </div>
+                    </div>  
+                </a>
+            </div>
+            <div class="works_pic col-lg-4 col-md-6 col-sm-12">
+                    <div class="border_animation">
+                        <div class="border border_top"></div>
+                        <div class="border border_right"></div>
+                        <div class="border border_bottom"></div>
+                        <div class="border border_left"></div>
+                        <h3>项 目 类</h3>
+                        <div class="picture">
+                            <div class="mask mask4 mask_a">
+                                <a href="#" class="pross"><p style="text-indent: 2em;"><img src="img/ktv.png" alt="">爱尚KTV</p></a>
+                                <a href="#" class="pross"><p style="text-indent: 2em;"><img src="img/bolan.png" alt="">博览日新</p></a>
+                                <a href="#" class="pross"><p style="text-indent: 2em;"><img src="img/jiaju.png" alt="">帝德森家居</p></a>
+                                <a href="#" class="pross"><p style="text-indent: 2em;"><img src="img/sql.png" alt="">送青来</p></a>
+                                <!-- <a href="http://lznktv.duapp.com" target="_blank"><img src="img/ktv.png" style="margin:10px 60px;width:150px;position: relative;height:150px" alt=""></a> -->
+                               <!--  <a href="http://wzbnews.duapp.com" target="_blank"><img src="img/bolan.png" style="margin:10px 60px;width:150px;position: relative;height:150px" alt=""></a>
+                                <a href="http://wzbccc.duapp.com/jiaju" target="_blank"><img src="img/jiaju.png" style="margin:10px 60px;width:150px;position: relative;height:150px" alt=""></a>
+                                <a href="http://cjzsql.duapp.com" target="_blank"><img src="img/sql.png" style="margin:10px 60px;width:150px;position: relative;height:150px" alt=""></a> -->
+                            </div>
+                            <img src="img/04.jpg" alt="" class="tu4">
+                        </div>
+                    </div>  
+            </div>
 
-<body data-spy="scroll">
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status"></div>
-    </div>
-	
-    <div id="main-wrapper">
-        
-        <!-- Site Navigation -->
-        <div id="menu">
-            <nav class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html#">
-                        <a href="wzb3d.html"><h3>温馨一刻(3D版)</h3></a>
-                    </a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a class="sscroll" href="index.html#home">Primary 初生</a></li>
-                        <li><a class="sscroll" href="index.html#services">Growth 成长</a></li>
-                        <li><a class="sscroll" href="index.html#portfolio">Mature 成熟</a></li>
-                        <li><a class="sscroll" href="index.html#about">MySelf</a></li>
-                        <li><a class="sscroll" href="index.html#clients">Ps On Display 作品展示</a></li>
-                        <li><a class="sscroll" href="index.html#blog-front">Communication 交流</a></li>
-                        <li><a class="sscroll" href="index.html#contact">Contact 联系</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
+            <div class="works_pic col-lg-4 col-md-6 col-sm-12">
+                <a href="###">
+                    <div class="border_animation">
+                        <div class="border border_top"></div>
+                        <div class="border border_right"></div>
+                        <div class="border border_bottom"></div>
+                        <div class="border border_left"></div>
+                        <h3>实 用 类</h3>
+                        <div class="picture">
+                            <div class="mask mask5 mask_a">
+                                <a href="ajax/tianqi/ajax.html" target="_blank"><p style="text-indent: 2em;"><img src="img/timg.gif" alt=""> 天 气 预 报</p></a>
+                            </div>
+                            <img src="img/05.jpg" alt="" class="tu5">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="works_pic col-lg-4 col-md-6 col-sm-12">
+                <a href="###">
+                    <div class="border_animation">
+                        <div class="border border_top"></div>
+                        <div class="border border_right"></div>
+                        <div class="border border_bottom"></div>
+                        <div class="border border_left"></div>
+                        <h3>聊天室</h3>
+                        <div class="picture">
+                            <div class="mask mask6 mask_a">
+                                <a href="3D/3D.html" target="_blank"><p style="text-indent: 2em;"><img src="img/66.jpg" alt=""> 3D 空 间</p></a>
+                            </div>
+                             <img src="img/06.jpg" alt="" class="tu6">
+                        </div>
+                    </div>      
+                </a>
+            </div>
+            </div>
         </div>
-        
-        <div id="container">
-            <!-- BEGIN HOME -->
-            <section id="home" class="home">
-                <!-- Superslides -->
-                <div id="home-slide">
-                    <ul class="slides-container text-center">
-                        <li>
-                            <div class="slide-text">
-                                <h2>初生...</h2>
-                                <span>汝瞳焉如新出之犊，而无求其故</span>
-                                <br/>
+        <!-- 我的作品结束-->
+            <canvas id="lizi" width="1400" height="800"></canvas> 
+        </li>
+        <li>
+             <div class="xuan">
+                <a href="html/kafei/index.html" class="xua1"></a>
+                <div class="close">X</div>
+            </div>
+            <div class="Photoshop">
+                <h1>Photoshop 作品展</h1>
+                <div class="tupian1"></div>
+                <div class="tupian2"></div>
+                <div class="tupian3"></div>
+                <div class="tupian4"></div>
+                <div class="tupian5"></div>
+                <div class="tupian6"></div>
+                <div class="tupian7"></div>
+                <div class="tupian8"></div>
+                <div class="tupian9"></div>
+                <div class="tupian10"></div>
+                <div class="tupian11"></div>
+            </div>
+        </li>
+        <li>
+             <h1>卫卓彪温馨小屋</h1>
+            <div class="zhanshi">
+                <div class="zhanshibox">
+                    <div class="geren">
+                        <h2 class="iconfont1">&#xe634;</h2>
+                        <div class="gerenzhao">
+                            <img src="img/psb.jpg" alt="">
+                        </div>
+                        <div class="gerenjianjie">
+                            <div class="grjl iconfont1">&#xe640; : 卫卓彪</div>
+                            <div class="grjl iconfont1">&#xe605; ：3月28日</div>
+                            <div class="grjl iconfont1">&#xe604; ：金牛座</div>
+                            <div class="grjl iconfont1">&#xe630; ：骑行</div>
+                            <div class="grjl iconfont1">&#xe61c; ：229677717</div>
+                            <div class="grjl iconfont1">&#xe63b; ：18434393787</div>
+                            <div class="grjl iconfont1">&#xe609; ：18434393787</div>
+                            <div class="grjl iconfont1" style="font-size:26px">&#xe607; ：wzb5156997@163.com</div>
+                        </div>
+                        <div class="shiyan">
+                            <div class="bt1">我的誓言</div>
+                            <div class="nr">
+                                誓言用来拴骚动的心，终就拴住了虚空。山林不向四季起誓，荣枯随缘；海洋不需对沙岸承诺，遇合尽兴。连语言都应该舍弃，你我之间，只有干干净净的缄默，与存在。
                             </div>
-                          <div class="slide-filter"></div>
-                            <img src="images/slider/slider-img-1.jpg" class="par" alt="first">
-                        </li>
-                        <li>
-                            <div class="slide-text">
-                                <h2>成长...</h2>
-                                <span>汝不知夫螳螂乎？怒其臂以当车辙，不知其不胜任也，是其才之美者也。</span>
-                                <br/>
-                            </div>
-                          <div class="slide-filter"></div>
-                            <img src="images/slider/slider-img-2.jpg" class="par" alt="first">
-                        </li>
-                        <li>
-                            <div class="slide-text">
-                                <h2>成熟...</h2>
-                                <span>夫小惑易方，大惑易性。</span>
-                                <br/>
-                            </div>
-                          <div class="slide-filter"></div>
-                            <img src="images/slider/slider-img-3.jpg" class="par" alt="first">
-                        </li>
-                    </ul>
-                    <nav class="slides-navigation slidez">
-                        <a href="javascript:;" class="next">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
-                        <a href="javascript:;" class="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                    </nav>
-                </div>
-                <!-- End of Superslide -->
-            </section>
-            <!-- END HOME -->
-            
-            <!-- BEGIN SERVICES -->
-            <section id="services" class="services">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header-content">
-                            <h2>一技之长</h2>
-                            <h3>成长路上，我们学到很多，我们仍有很多要学</h3>
+                            <div class="zz">——简媜 《海誓》</div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-paper-plane"></i>
-                                    </div>
-                                    <h3 class="heading">前端技能</h3>
-                                    <p class="description">
-                                        html5 、css3 、js 、jquery angularjs、nodejs、bootstrap
-                                    </p>
-				</div>
+                    <div class="jineng">
+                        <h2>技能专区</h2>
+                        <div class="service">
+                            <div class="icon-holder">
+                                <i class="fa iconfont2">&#xe604;</i>
                             </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-diamond"></i>
-                                    </div>
-                                    <h3 class="heading">计算机网络技术</h3>
-                                    <p class="description">计算机硬件，网络安全，系统配置</p>
-				</div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-camera"></i>
-                                    </div>
-                                    <h3 class="heading">摄影</h3>
-                                    <p class="description">Photography</p>
-				</div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-heartbeat"></i>
-                                    </div>
-                                    <h3 class="heading">后台语言</h3>
-                                    <p class="description">php</p>
-				</div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-life-ring"></i>
-                                    </div>
-                                    <h3 class="heading">常用软件</h3>
-                                    <p class="description">webstrom、hbuilder、Photoshop、ai、flash动画、submit</p>
-				</div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="service">
-                                    <div class="icon-holder">
-                                        <i class="fa fa-rocket"></i>
-                                    </div>
-                                    <h3 class="heading">软技能</h3>
-                                    <p class="description">乐观开朗积极向上、良好的沟通能力、不错的团队协作能力</p>
-				</div>
-                            </div>
+                            <h3 class="heading">前端技能</h3>
+                            <p class="description">
+                                html5 、css3 、js 、jquery angularjs、nodejs、bootstrap
+                            </p>
                         </div>
-                    </div>                   
-                </div>
-            </section>
-            <!-- END SERVICES -->
-            <!-- BEGIN PORTFOLIO -->
-            <section id="portfolio" class="portfolio gray">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header-content">
-                            <h2>作品集</h2>
-                            <h3>曾经拥有</h3>
+                        <div class="service">
+                            <div class="icon-holder">
+                                <i class="fa iconfont2">&#xe7a8;</i>
+                            </div>
+                            <h3 class="heading">后台语言</h3>
+                            <p class="description">php</p>
+                        </div>
+                        <div class="service">
+                            <div class="icon-holder">
+                                <i class="fa iconfont2">&#xe6fc;</i>
+                            </div>
+                            <h3 class="heading">常用软件</h3>
+                            <p class="description">webstrom、hbuilder、photoshop、submit</p>
+                        </div>
+                        <div class="service">
+                            <div class="icon-holder">
+                                <i class="fa iconfont2">&#xe695;</i>
+                            </div>
+                            <h3 class="heading">软技能</h3>
+                            <p class="description">乐观开朗积极向上、良好的沟通能力、不错的团队协作能力</p>
                         </div>
                     </div>
-                    
-                    <div class="col-md-12">
-                        <ul class="portfolioFilter text-center">
-                            <li data-filter="websites">HTML</li>
-                            <li data-filter="illustrations">常用软件</li>
-                            <li data-filter="photo">我的精品咖啡</li>
-                            <li data-filter="all">全部</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12 mg-bt-80">
-                        <div class="row portfolioContainer  text-center">
-                            <div class="col-md-4 col-xs-6 portfolio-item websites">
-                                <div class="popup" href="images/portfolio/portfolio-thumb-1.jpg" data-lightbox-gallery="team-portfolio">
-                                    <span class="project-hover">
-                                        <span>经典网站首页
-                                            <p>
-                                            <a href="html/xiaomi/index.html">
-                                                <img src="img/xiaomi.ico" alt="" style="width:25px;height:25px">
-                                                <span>小米商城-红米手机、小米笔记本官网</span>
-                                            </a>
-                                            </p>
-                                            <p><a href="html/tianmao/index.html">
-                                                    <img src="img/tianmao.ico" alt="" style="width:25px;height:25px">
-                                                    <span>天猫tmall.com--上天猫，就够了</span>
-                                                </a>
-                                            </p>
-                                            <p>
-                                                <a href="html/yindong/index.html">
-                                                    <img src="img/jingdong.ico" alt="" style="width:25px;height:25px">
-                                                    <span>京东(JD.COM)-正品低价</span>
-                                                </a>
-                                            </p>
-                                            <p>
-                                                <a href="html/yindong/index.html">
-                                                    <img src="img/yidong.ico" alt="" style="width:25px;height:25px">
-                                                    <span>中国移动官方网站</span>
-                                                </a>
-                                            </p>
-                                            <p>
-                                                <a href="html/shafa/index.html">
-                                                    <img src="img/shafa.ico" alt="" style="width:25px;height:25px">
-                                                    <span>沙发网 - 沙发管家官方下载网站</span>
-                                                </a>
-                                            </p>
-                                            <p>
-                                                <a href="html/yintai/yintai.html">
-                                                    <img src="img/yintai.png" alt="" style="width:25px;height:25px">
-                                                    <span>银泰网 - 官方购物网站</span>
-                                                </a>
-                                            </p>
-                                            <p>
-                                                <a href="html/apple/index.html">
-                                                    <img src="img/apple.png" alt="" style="width:25px;height:25px">
-                                                    <span>Apple (中国) - 官方网站</span>
-                                                </a>
-                                            </p>
-                                            <p>
-                                                <a href="html//fanke/index.html">
-                                                    <img src="img/fanke.ico" alt="" style="width:25px;height:25px">
-                                                    <span>凡客VANCL-互联网快时尚品牌</span>
-                                                </a>
-                                            </p>
-                                        </span>
-                                       
-                                    </span>
-                                     <img src="images/portfolio/portfolio-thumb-4.jpg" alt="portfolio-thumb-1">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-6 portfolio-item illustrations">
-                                <div class="popup" href="images/portfolio/portfolio-thumb-5.jpg" data-lightbox-gallery="team-portfolio">
-                                    <span class="project-hover">
-                                        <span>PS作品展示</span>
-                                    </span>
-                                    <img src="images/portfolio/portfolio-thumb-5.jpg" alt="portfolio-thumb-5">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-6 portfolio-item websites">
-                                <div href="http://zxyworkapp.duapp.com" title="Image with title"  data-lightbox-gallery="team-portfolio">
-                                    <span class="project-hover">
-                                        <span class="youxi">
-                                            <span>特效及工具</span>
-                                            <div class="huaban">
-                                                <a href="html/huaban.html">
-                                                    <img src="img/huaban.png" alt="">
-                                                    <p>画板工具</p>
-                                                </a>
-                                            </div>
-                                            <div class="tianqi1">
-                                                <a href="html/tianqi/tianqi.html"><img src="img/tianqi.png" alt="">
-                                                <p>天气查询</p></a>
-                                            </div>
-                                            <div class="lizi">
-                                                <a href="html/lizi.html"><img src="img/t014093d6dd546395da.gif" alt="">
-                                                <p>粒子动画</p></a>
-                                            </div>
-                                            <div class="dbsx">
-                                                <a href="html/dbsx.html"><img src="img/dbsx.png" alt="">
-                                                <p>待办事项</p></a>
-                                            </div>
-                                        </span>
-                                    </span>
-                                    <img src="images/portfolio/portfolio-thumb-3.jpg" alt="portfolio-thumb-3">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-6 portfolio-item photo">
-                                <div href="http://localhost:3300/">
-                                    <span class="project-hover">
-                                        <span>
-                                            <a href="html/kafei/index.html">
-                                                 <span style="line-height:300px;">工作之余，请品尝 - 精品咖啡</span>
-                                            </a>
-                                        </span>
-                                    </span>                                  
-                                    <img src="images/portfolio/portfolio-thumb-1.jpg" alt="portfolio-thumb-4">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-6 portfolio-item websites">
-                                <div href="https://zhixiaoyu123.github.io/myworks/huaban/index.html" data-lightbox-gallery="team-portfolio">
-                                    <span class="project-hover">
-                                        <span class="youxi">  
-                                            <span class="youxi">
-                                            <span>童年的记忆</span>
-                                            <div class="huaban">
-                                                <a href="html/youxi-saolei/index.html">
-                                                    <img src="img/saolei.png" alt="">
-                                                    <p>扫雷游戏</p>
-                                                </a>
-                                            </div>
-                                            <div class="tianqi1">
-                                                <a href="html/youxi-dazi/index.html"><img src="img/dazi.png" alt="">
-                                                <p>打字游戏</p></a>
-                                            </div>
-                                            <div class="lizi">
-                                                <a href="html/youxi-wzq/index.html"><img src="img/rjwzq.png" alt="">
-                                                <p>五子棋-人机大战</p></a>
-                                            </div>
-                                            <div class="wjdzwzq">
-                                                <a href="html/youxi-wzq/index2.html"><img src="img/wzqwj.png" alt="">
-                                                <p>五子棋-玩家对战</p></a>
-                                            </div>
-                                        </span>
-                                        </span>
-                                    </span>
-                                    <img src="images/portfolio/portfolio-thumb-2.jpg" alt="portfolio-thumb-2">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-xs-6 portfolio-item illustrations">
-                                <div href="https://zhixiaoyu123.github.io/myworks/paoku/index.html">
-                                    <span class="project-hover">
-                                        <span>AI设计作品
-                                        </span>
-                                    </span>
-                                    <img src="images/portfolio/portfolio-thumb-6.jpg" alt="portfolio-thumb-6">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- END PORTFOLIO -->
-
-            <section id="about" class="about gray">
-                <div class="row">
-                    <div class="col-md-12 mg-bt-80">
-                        <div class="header-content">
-                            <h2>Recollecting my youth</h2>
-                            <h3>I believe i can fly，I believe i can touch the sky，I really know who i am，I really know what's my life.</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="row mg-bt-40">
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="teams">
-                                    <div class="pict">
-                                        <img src="img/psb.jpg" alt="Team 1">
-                                    </div>
-                                </div>
-                          </div>
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <div class="gerenzhao clear">
-                    <div class="grz iconfont">&#xe634;</div>
-                    <div class="grjl iconfont">&#xe640; : 卫卓彪</div>
-                    <div class="grjl iconfont">&#xe605; ：3月28日</div>
-                    <div class="grjl iconfont">&#xe604; ：金牛座</div>
-                    <div class="grjl iconfont">&#xe630; ：骑行</div>
-                    <div class="grjl iconfont">&#xe61c; ：229677717</div>
-                    <div class="grjl iconfont">&#xe63b; ：18434393787</div>
-                    <div class="grjl iconfont">&#xe609; ：18434393787</div>
-                    <div class="grjl iconfont">&#xe607; ：229677717@qq.com</div>
-                    
-                </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="clients" class="clients">
-                <div class="row">
-                    <div class="col-md-12 mg-bt-80">
-                        <div class="header-content">
-                            <h2>Ps On Display</h2>
-                            <h3>Some of our works</h3>
-                        </div>
-                    </div>                    
-                    <div class="col-lg-12">
-                        <div class="row mg-bt-60">
-                            <div class="col-md-12">
-                                <ul class="client-slider">
-                                    <li><img src="img/niwu/光跑鞋.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/niwu/话筒.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/niwu/蜡烛.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/niwu/魔法瓶.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/zuhe/美女.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/zuhe/巧克力.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/zuhe/魔女.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/niwu/灯泡.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                    <li><img src="img/niwu/大白.jpg" alt="logo-1" style="width:371px;height:200px;"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- BEGIN BLOG -->
-            <section id="blog-front" class="blog-front gray">
-                <div class="row">
-                    <div class="col-md-12 mg-bt-80">
-                        <div class="header-content">
-                            <h2>聊一聊呗</h2>
-                            <h3>我认为的不一定对，你认为的不一定错</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <article class="col-md-4 col-sm-6">
-                        <figure class="blog-thumb">
-                            <img src="images/blog/blog-1.jpg" alt="blog-thumb">
-                        </figure>
-                        <div class="post-area">
-                            <a class="post-cat" href="#">
-                            <h4>web工程师</h4>
-                            </a>
-                            <a class="post-title" href="#">
-                                <h3>罗马不是一天建成的</h3>
-                            </a>
-                            <p class="post-content">什么叫前端工程师？06年的淘宝美工，90年的平面设计，2014年的h5、cs3...</p>
-                        </div>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <figure class="blog-thumb">
-                            <img src="images/blog/blog-2.jpg" alt="blog-thumb">
-                        </figure>
-                        <div class="post-area">
-                            <a class="post-cat" href="#">
-                            <h4>团队精神</h4>
-                            </a>
-                            <a class="post-title" href="#">
-                                <h3>沟通、信任、换位、快乐</h3>
-                            </a>
-                            <p class="post-content">良好的沟通能力，信任你的团队，出现冲突时要学会换位思考，从工作中代码中感受到快乐！</p>
-                        </div>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <figure class="blog-thumb">
-                            <img src="images/blog/blog-3.jpg" alt="blog-thumb">
-                        </figure>
-                        <div class="post-area">
-                            <a class="post-cat" href="#">
-                            <h4>工作态度</h4>
-                            </a>
-                            <a class="post-title" href="#">
-                                <h3>态度决定一切</h3>
-                            </a>
-                            <p class="post-content">不抛弃，不放弃，尽你所能去做，去坚持，就是成功</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a class="btn blog-btn" href="##">小感悟</a>
-                    </div>
-                </div>
-            </section>
-            <!-- END BLOG -->
-
-            <!-- BEGIN CONTACT -->
-            <section id="contact" class="contact gray">
-                <div class="row">
-                    <div class="col-md-12 mg-bt-80">
-                        <div class="header-content">
-                            <h2>联系我吧</h2>
-                            <h3>如果你觉的我还不错的话</h3>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6">
+                    <div class="lianxi">
+                        <h2>联系我吧</h2>
+                        <h3>如果你觉的我还不错的话</h3>
                         <div class="address">
                             <h2>求职宣言</h2>
-                            <p>别人不愿意做的事情我愿意做,别人可以做到的事情,<br>我会尽全力做得更好!</p>
+                            <p>别人不愿意做的事情我愿意做,别人可以做到的事情,我会尽全力做得更好!</p>
                             <h2>联系方式</h2>
-                            <ul class="office">
-                                <li><i class="fa fa-map-marker"></i> <strong>地址:</strong> 山西省运城市河津市</li>
-                                <li><i class="fa fa-phone"></i> <strong>电话:</strong> 18434393787</li>
-                                <li><i class="fa fa-envelope"></i> <strong>邮箱:</strong> <a href="mailto:229677717@qq.com" style="#85939b">229677717@qq.com</a></li>
-                            </ul>
+                            <div class="office">
+                                <div><i class="fa fa-map-marker"></i> <strong>地址:</strong> 山西省运城河津</div>
+                                <div><i class="fa fa-phone"></i> <strong>电话:</strong> 15935574558</div>
+                                <div><i class="fa fa-envelope"></i> <strong>邮箱:</strong> <a
+                                        href="#">229677717@qq.com</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6">
-                        <form id="contact-form" role="form">                            
+                        <form id="contact-form" role="form">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="c_name" placeholder="Name">
                             </div>
-                            
+
                             <div class="form-group">
-                                <input type="email" class="form-control" id="c_email" placeholder="Email">                                
+                                <input type="email" class="form-control" id="c_email" placeholder="Email">
                             </div>
-                            
+
                             <div class="form-group">
-                                <textarea class="form-control" id="c_message" rows="10" placeholder="Message"></textarea>
+                                <textarea class="form-control" id="c_message" rows="10"
+                                          placeholder="Message"></textarea>
                             </div>
-                            <br/>
-                            <button type="submit" class="btn">Send Message</button>
+                            <button type="submit" class="btn55">Send Message</button>
                             <div class="ajax-response"></div>
                         </form>
                     </div>
-                    
+                    <div class="shipin">点击请接受自我应聘视频</div>
                 </div>
-            </section>
-            <!-- END CONTACT -->
-            <!-- BEGIN FOOTER -->
-            <footer>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="social">
-                            <a href="javascript:;"><i class="fa fa-facebook"></i></a>
-                            <a href="javascript:;"><i class="fa fa-twitter"></i></a>
-                            <a href="javascript:;"><i class="fa fa-pinterest"></i></a>
-                            <a href="javascript:;"><i class="fa fa-dribbble"></i></a>
-                </div>
+                <div class="left">&lt;</div>
+                <div class="right">&gt;</div>
+                <section>
+                    <video src="av/cc.mp4" poster="img/cc.jpg" width="100%" height="100%"></video>
+                    <div class="star iconfont55">&#xe601;</div>
+
+                    <div class="kzzx">
+                        <div class="yin">
+                            <input type="button" class="yinliang iconfont55" value="&#xe607;" value8="&#xe606;"
+                                   value9="&#xe607;">
+                            <div class="ylq"></div>
+                            <div class="bj">
+                                <div class="vol">
+                                    <div class="volinner"></div>
+                                </div>
+                                <div class="mask"></div>
+                            </div>
+                        </div>
+                        <input type="button" class="reload iconfont55" value="&#xe600;">
+                        <input type="button" class="zanting iconfont55" value="&#xe601;" value1="&#xe605;"
+                               value2="&#xe601;">
+                        <div class="newtime">00:00:00</div>
+                        <input type="button" class="quanp iconfont55" value="&#xe602;" value3="&#xe608;"
+                               value4="&#xe602;">
+                        <div class="alltimes"></div>
+
                     </div>
+                    <div class="progress">
+                        <div class="inner"></div>
+                    </div>
+                </section>
+            </div>
+        </li>
+         <li style="opacity: 0">
+            <div class="all">
+                <div class="nav"></div>
+                <div class="lianpubox">
+                    <div class="fengmian"></div>
                 </div>
-            </footer>
-            <!-- END FOOTER -->
-        </div>
-    </div>
-
-
-    <!-- Back to top -->
-    <div id="backtotop">       
-        <a class="to-top-btn sscroll" href="index.html#home"><i class="fa fa-angle-double-up"></i></a>
-    </div>
-
-
-    <!-- Library Scripts -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/lib/jquery.preloader.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/lib/jquery.superslides.min.js"></script>
-    <script src="js/lib/smoothscroll.js"></script>
-    <script src="js/lib/jquery.bxslider.min.js"></script>
-    <script src="js/lib/jquery.mixitup.min.js"></script>
-    <script src="js/lib/jquery.backtotop.js"></script>
-    <script src="js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
-    <script src="js/lib/retina.min.js"></script>    
-
-    <!-- Custom Script -->    
-     <!-- // <script src="js/index2.js"></script> -->
-   <script src="js/main2.js"></script>
+                <div class="lianname">
+                    <dl class="nameele">
+                        <dd class="name1">爱&nbsp;尚&nbsp;KTV</dd>
+                        <dd class="name1">博&nbsp;览&nbsp;日&nbsp;新</dd>
+                        <dd class="name1">帝&nbsp;德&nbsp;森&nbsp;家&nbsp;居</dd>
+                        <dd class="name1">送&nbsp;青&nbsp;来</dd>
+                        
+                        <dd class="name1">程&nbsp;晋:《凤凰二桥》</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 </body>
+<script type="text/javascript" src="js/hover.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="text/javascript" src="js/hongkuai.js"></script>
+<script type="text/javascript" src="js/mian.js"></script>
+<script type="text/javascript" src="js/shizhong.js"></script>
+<script type="text/javascript" src="js/lizi.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-main.js"></script>
+<script type="text/javascript" src="js/tianqi.js"></script>
+<script type="text/javascript">
+    const xuan = $(".xuan")[0];
+    const close = $(".close")[0];
+    const xuanw = xuan.offsetWidth;
+    const xuanh = xuan.offsetHeight;
+    let winW = document.documentElement.clientWidth;
+    let winH = document.documentElement.clientHeight;
+    var flagff = true;
 
+
+    let spanx = 20;
+    let spany = 20;
+    let xuanx = xuan.offsetLeft;
+    let xuany = xuan.offsetTop;
+
+    var t = setInterval(move, 60);
+    function move() {
+        xuanx += spanx;
+        xuany += spany;
+        if (xuanx >= winW - xuanw) {
+            xuanx = winW - xuanw;
+            spanx = -spanx;
+        }
+        if (xuanx <= 0) {
+            xuanx = 0;
+            spanx = -spanx;
+        }
+        if (xuany >= winH - xuanh) {
+            xuany = winH - xuanh;
+            spany = -spany;
+        }
+        if (xuany <= 0) {
+            xuany = 0;
+            spany = -spany;
+        }
+        xuan.style.left = xuanx + "px";
+        xuan.style.top = xuany + "px";
+    }
+
+    window.onresize = function () {
+        winW = document.documentElement.clientWidth;
+        winH = document.documentElement.clientHeight;
+    }
+    xuan.onmouseover = function () {
+        clearInterval(t)
+    }
+    xuan.onmouseout = function () {
+        if (flagff) {
+            if (t) {
+                clearInterval(t)
+            }
+            t = setInterval(move, 60);
+
+        }
+    }
+
+    close.onclick = function () {
+        if (flagff) {
+            flagff = false;
+            animate(xuan, {left: -150}, 1000);
+        } else {
+            animate(xuan, {left: 0}, 1000, function () {
+                flagff = true;
+                t = setInterval(move, 60);
+            });
+
+        }
+
+
+    }
+</script>
+<script>
+
+    var tops=document.querySelector("li:nth-child(1)");
+    var bottom=document.querySelector("li:nth-child(3)");
+    var front=document.querySelector("li:nth-child(5)");
+    var bofang=document.querySelector("li:nth-child(7)");
+    var pross=document.querySelectorAll('.pross');
+    var lianpubox=document.querySelector('.lianpubox');
+    var nameele=document.querySelector('.nameele');
+    var box=document.querySelector(".box");
+    var clientW=window.innerWidth;
+    var clientH=window.innerHeight;
+    front.style.transform=`translateZ(${clientW}px)`;
+    tops.style.width=tops.style.height=bottom.style.width=bottom.style.height=clientW+"px";
+    bottom.style.top=clientH-clientW+"px";
+    box.style.transform="translateZ(-300px)";
+    box.style.transformOrigin="center center 400px";
+    bofang.style.transform=`translateZ(${clientW*0.68}px)`;
+    var startangle=0;
+    var mx=0;
+    document.onmousedown = function(e){
+        var sx= e.clientX;
+        document.onmousemove=function(e){
+            var cx= e.clientX;
+             mx=cx-sx;
+            box.style.transform=`translateZ(-300px) rotateY(${mx+startangle}deg)`;
+        }
+       document.onmouseup = function(){
+            startangle+=mx;
+            document.onmousemove=null;
+            document.onmouseup=null;
+        }
+    }
+    document.addEventListener('touchstart', function (e) {
+            let sx = e.touches[0].screenX;
+            document.addEventListener('touchmove',function (e) {
+                var cx = e.touches[0].screenX;
+                mx = cx - sx;
+                box.style.transform = `
+            translateZ(-300px)
+            rotateY(${mx + startangle}deg)`;
+            })
+            document.addEventListener('touchend',function () {
+                startangle += mx;
+                document.ontouchmove = null;
+                document.ontouchend = null;
+            })
+        })
+    var hrefs=["http://lznktv.duapp.com","http://wzbnews.duapp.com","http://wzbccc.duapp.com/jiaju","http://cjzsql.duapp.com"];
+    var imgss=["img/ktv.png","img/bolan.png","img/jiaju.png","img/sql.png","img/ktv.png"];
+        for(let i=0;i<4;i++){
+            pross[i].onclick=function(){
+                bofang.style.opacity="1";
+                nameele.style.marginTop=-(i)*100+"px";
+                var a=document.createElement("a");
+                // a.href=hrefs[i];
+                a.setAttribute("href",hrefs[i]);
+                a.style.backgroundImage=`url(${imgss[i]})`;
+                lianpubox.appendChild(a);
+                // lianpubox.setAttribute("href","http://www.baidu.com");
+                
+            }
+        }
+        bofang.onclick=function(){
+            bofang.style.opacity="0";
+        }
+</script>
 </html>

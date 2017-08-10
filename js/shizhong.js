@@ -1,37 +1,4 @@
-	var tops=document.querySelector("li:nth-child(1)");
-	var bottom=document.querySelector("li:nth-child(3)");
-	var front=document.querySelector("li:nth-child(5)");
-	var hou=document.querySelector("li:nth-child(6)");
-	var box=document.querySelector(".box");
-	var clientW=window.innerWidth;
-	var clientH=window.innerHeight;
-
-    window.onresize=function(){
-                clientW=window.innerWidth;
-                clientH=window.innerHeight;
-             }
-
-	tops.style.width=tops.style.height=bottom.style.width=bottom.style.height=clientW+"px";
-	bottom.style.top=clientH-clientW+"px";
-	front.style.transform=`translateZ(${clientW}px)`;
-    // front.style.transform="rotateY(180deg)"; 
-	box.style.transform="translateZ(-500px)";
-	box.style.transformOrigin="center center 500px";
-	 var startangle=0;
-    var nowangle=0;
-    document.onmousedown=function (e) {
-        var sx=e.clientX;
-        document.onmousemove=function (e) {
-            var cx=e.clientX;
-            nowangle=cx-sx;
-            box.style.transform=`translateZ(-500px) rotateY(${startangle+nowangle}deg)`;
-        }
-        document.onmouseup=function (e) {
-            startangle+=nowangle;
-            document.onmousemove=null;
-            document.onmouseup=null;
-        }
-    }
+            var hou=document.querySelector("li:nth-child(6)");
     		var div = document.createElement("div");
             div.style.cssText = "width:200px;height:200px;background-image:url(img/f.gif);float:right; margin-right: 80px; border-radius:50%;position:relative;background-repeat: no-repeat;background-position: center;background-size: 141%;";
             hou.appendChild(div);

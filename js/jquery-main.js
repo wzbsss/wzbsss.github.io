@@ -25,4 +25,27 @@ $(function(){
     	$(".shipin").show(500);
     	
     })
+     $(".tu1").click(function(){
+        $(".mask1").slideDown("slow");
+   }).siblings('.mask').slideUp('slow');
+
+   $(".tu2").click(function(){
+        $(".mask2").slideDown("slow");
+   })
+   $(".tu3").click(function(){
+        $(".mask3").slideDown("slow");
+   })
+   $(".tu4").click(function(){
+        $(".mask4").slideDown("slow");
+   })
+   $(".tu5").click(function(){
+        $(".mask5").slideDown("slow");
+   })
+   $(".tu6").click(function(){
+        $(".mask6").slideDown("slow");
+   })
+   $('.mask').click(function(){
+        $(this).slideUp('slow');
+   })
+
 })
