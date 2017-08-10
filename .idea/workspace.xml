@@ -2,66 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="246383e0-ba5d-4a56-9e7e-6cc58e1a299a" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/general.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery.fullPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/demo_fontclass.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/demo_symbol.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/demo_unicode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/iconfont.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/iconfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/iconfont.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/iconfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/iconfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/15/iconfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/accessories_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/accessories_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/accessories_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/airpods_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/airpods_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/airpods_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/airpods_xlarge.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/ipad_pro_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/ipad_pro_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/ipad_pro_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/ipad_pro_xlarge.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_alt_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_alt_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_alt_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_upgrade_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_upgrade_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_upgrade_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/iphone_upgrade_xlarge.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/macbookpro_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/macbookpro_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/macbookpro_portrait_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/macbookpro_portrait_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/macbookpro_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/macbookpro_xlarge.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/watch_alt_large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/watch_alt_medium.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/img/watch_alt_portrait_small.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/js/animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/js/function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/apple/js/hongkuai.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/index2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.fullPage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.fullPage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/main2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wzb3d.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/apple/index.html" afterPath="$PROJECT_DIR$/html/apple/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/apple/js/jQuery.js" afterPath="$PROJECT_DIR$/html/apple/js/jQuery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-main.js" afterPath="$PROJECT_DIR$/js/jquery-main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/shizhong.js" afterPath="$PROJECT_DIR$/js/shizhong.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,21 +15,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6901">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="284">
+              <caret line="497" column="43" lean-forward="false" selection-start-line="497" selection-start-column="43" selection-end-line="497" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#18383#18389#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="1248" column="0" lean-forward="false" selection-start-line="1248" selection-start-column="0" selection-end-line="1248" selection-end-column="48" />
+            <state relative-caret-position="539">
+              <caret line="1295" column="21" lean-forward="true" selection-start-line="1295" selection-start-column="21" selection-end-line="1295" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -106,6 +51,7 @@
         <option value="$PROJECT_DIR$/css/general.css" />
         <option value="$PROJECT_DIR$/wzb3d.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -279,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502003872914</updated>
       <workItem from="1502003874083" duration="7413000" />
-      <workItem from="1502391617115" duration="75000" />
+      <workItem from="1502391617115" duration="514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7488000" />
+    <option name="totallyTimeSpent" value="7927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -298,7 +244,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -370,19 +316,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6901">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="539">
+          <caret line="1295" column="21" lean-forward="true" selection-start-line="1295" selection-start-column="21" selection-end-line="1295" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="1248" column="0" lean-forward="false" selection-start-line="1248" selection-start-column="0" selection-end-line="1248" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="284">
+          <caret line="497" column="43" lean-forward="false" selection-start-line="497" selection-start-column="43" selection-end-line="497" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#li#6;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#18383#18389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
