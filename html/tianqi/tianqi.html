@@ -240,7 +240,7 @@
     </tbody>
 </table>
 </div>
-<script src="jQuery.js"></script>
+<script src="jquery.js"></script>
 <script>
 // 和风天气获取
 // https://free-api.heweather.com/v5/
@@ -266,7 +266,6 @@
                $(".weather tbody").empty();
                $.get("https://free-api.heweather.com/v5/weather",{city:city,key:"f83f293eedd8440aad69e3e0346ae412"},function (r) {
                    var arr=["今天","明天","后天"]
-                   console.log(r)
                    $.each(r.HeWeather5[0].daily_forecast,function (index,value) {
                        $("<tr>").html(function () {
                            return "<td>"+arr[index]+"</td><td>"+value.date+"</td><td>"+value.cond.txt_d+"</td><td>"+value.tmp.min+"℃~"+value.tmp.max+"℃"+"</td><td>"+value.wind.dir+"/"+value.wind.sc+"</td>"
