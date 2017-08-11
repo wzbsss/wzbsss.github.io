@@ -1304,9 +1304,10 @@
 
     overflow: hidden;
 }
-.lianname a{
+.lianpubox .fengmian a{
 	width: 400px;
-	height: 100px;
+	height: 440px;
 	background-size: cover;
 	display: block;
+	transform: rotateY(180deg);
 }

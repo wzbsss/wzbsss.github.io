@@ -163,12 +163,9 @@
                         <div class="border border_right"></div>
                         <div class="border border_bottom"></div>
                         <div class="border border_left"></div>
-                        <h3>实 用 类</h3>
+                        <h3>个人博客</h3>
                         <div class="picture">
-                            <div class="mask mask5 mask_a">
-                                <a href="ajax/tianqi/ajax.html" target="_blank"><p style="text-indent: 2em;"><img src="img/timg.gif" alt=""> 天 气 预 报</p></a>
-                            </div>
-                            <img src="img/05.jpg" alt="" class="tu5">
+                            <a href="http://wzbblog.duapp.com" target="_blank"><img src="img/05.jpg" alt="" class="tu5"></a>
                         </div>
                     </div>
                 </a>
@@ -180,12 +177,9 @@
                         <div class="border border_right"></div>
                         <div class="border border_bottom"></div>
                         <div class="border border_left"></div>
-                        <h3>聊天室</h3>
+                        <h3>聊 天 室</h3>
                         <div class="picture">
-                            <div class="mask mask6 mask_a">
-                                <a href="3D/3D.html" target="_blank"><p style="text-indent: 2em;"><img src="img/66.jpg" alt=""> 3D 空 间</p></a>
-                            </div>
-                             <img src="img/06.jpg" alt="" class="tu6">
+                            <a href="3D/3D.html" target="_blank"><img src="img/06.jpg" alt="" class="tu6"></a>
                         </div>
                     </div>      
                 </a>
@@ -453,6 +447,7 @@
     var lianpubox=document.querySelector('.lianpubox');
     var nameele=document.querySelector('.nameele');
     var box=document.querySelector(".box");
+    var fengmian=document.querySelector(".fengmian");
     var clientW=window.innerWidth;
     var clientH=window.innerHeight;
     front.style.transform=`translateZ(${clientW}px)`;
@@ -501,7 +496,7 @@
                 // a.href=hrefs[i];
                 a.setAttribute("href",hrefs[i]);
                 a.style.backgroundImage=`url(${imgss[i]})`;
-                lianpubox.appendChild(a);
+                fengmian.appendChild(a);
                 // lianpubox.setAttribute("href","http://www.baidu.com");
                 
             }
