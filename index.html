@@ -192,7 +192,7 @@
         <li>
              <div class="xuan">
                 <a href="html/kafei/index.html" class="xua1"></a>
-                <div class="close">X</div>
+                <div class="close" style="display: none">X</div>
             </div>
             <div class="Photoshop">
                 <h1>Photoshop 作品展</h1>
@@ -411,6 +411,7 @@
     }
     xuan.onmouseover = function () {
         clearInterval(t)
+        close.style.display="block"
     }
     xuan.onmouseout = function () {
         if (flagff) {
@@ -418,8 +419,8 @@
                 clearInterval(t)
             }
             t = setInterval(move, 60);
-
         }
+        close.style.display="none"
     }
 
     close.onclick = function () {
